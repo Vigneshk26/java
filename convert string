@@ -1,0 +1,13 @@
+11. How to convert string to date in java in yyyy-mm-dd format?
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class StringToDateExample {
+    public static void main(String[] args) throws Exception {
+        String dateString = "2023-04-26";
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = format.parse(dateString);
+        System.out.println(date);
+    }
+}
